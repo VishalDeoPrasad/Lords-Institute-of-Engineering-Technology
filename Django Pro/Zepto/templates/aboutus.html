@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Zepto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #6c2bd9;
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 8%;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    /* Mission & Vision */
+    .mission-vision {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 40px 8%;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #6c2bd9;
+    }
+
+    /* Values */
+    .values {
+      padding: 50px 8%;
+      background: #fff;
+      text-align: center;
+    }
+    .values h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .value {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .value:hover {
+      transform: translateY(-5px);
+    }
+    .value h3 {
+      color: #6c2bd9;
+      margin-bottom: 10px;
+    }
+
+    /* Team */
+    .team {
+      padding: 50px 8%;
+      text-align: center;
+    }
+    .team h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .member img {
+      width: 100%;
+      border-radius: 50%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .member h3 {
+      margin: 10px 0 5px;
+    }
+    .member p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 5%;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .mission-vision {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Zepto</h1>
+    <nav>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'aboutus' %}">About Us 🛒</a>
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% url 'login' %}">Login</a>
+      <a href="{% url 'register' %}">Register</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Zepto</h2>
+    <p>Welcome to Zepto 🚀 – your trusted 10-minute grocery delivery partner. 
+       We aim to make your everyday shopping faster, simpler, and smarter. 
+       With a wide range of fresh fruits, vegetables, dairy, snacks, and more, 
+       we bring convenience right to your doorstep.</p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To deliver groceries and essentials in under 10 minutes, while ensuring 
+         freshness, affordability, and trust with every order.</p>
+    </div>
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To revolutionize online grocery shopping by setting new benchmarks 
+         in speed, reliability, and customer satisfaction.</p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values">
+    <h2>Our Core Values</h2>
+    <div class="value-grid">
+      <div class="value">
+        <h3>🚀 Speed</h3>
+        <p>Deliver groceries in minutes, not hours.</p>
+      </div>
+      <div class="value">
+        <h3>🌱 Freshness</h3>
+        <p>Only the best quality fruits, veggies & products.</p>
+      </div>
+      <div class="value">
+        <h3>🤝 Trust</h3>
+        <p>Reliable service with no compromises.</p>
+      </div>
+      <div class="value">
+        <h3>💡 Innovation</h3>
+        <p>Smart technology to enhance customer experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="https://source.unsplash.com/200x200/?man,face" alt="Team Member">
+        <h3>Rohit Sharma</h3>
+        <p>Co-Founder & CEO</p>
+      </div>
+      <div class="member">
+        <img src="https://source.unsplash.com/200x200/?woman,face" alt="Team Member">
+        <h3>Ananya Gupta</h3>
+        <p>Co-Founder & CTO</p>
+      </div>
+      <div class="member">
+        <img src="https://source.unsplash.com/200x200/?developer,face" alt="Team Member">
+        <h3>Arjun Mehta</h3>
+        <p>Head of Operations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Zepto Project | All Rights Reserved</p>
+    <p>Made with ❤️ in India</p>
+  </footer>
+
+</body>
+</html>

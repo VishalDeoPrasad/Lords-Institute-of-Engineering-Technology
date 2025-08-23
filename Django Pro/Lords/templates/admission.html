@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Lords Institute of Engineering & Technology</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background: #004aad; color: white; padding: 10px 20px; }
+        header h1 { margin: 0; font-size: 22px; }
+        nav { background: #00a2e8; padding: 10px 20px; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .content { padding: 40px; }
+        .content h2 { color: #004aad; margin-bottom: 15px; }
+        .content ul { margin-left: 20px; }
+        .content li { margin-bottom: 10px; }
+        footer { background: #004aad; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        .apply-box {
+            background: #f4f4f4; 
+            padding: 20px; 
+            margin-top: 20px; 
+            border-radius: 8px; 
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Lords Institute of Engineering & Technology</h1>
+        <p>UGC Autonomous | NAAC Accredited | NBA Accredited</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'admission' %}">Admissions</a>
+        <a href="{% url 'campuslife' %}">Campus Life</a>
+        <a href="#">Departments</a>
+        <a href="#">Placements</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Admissions Content -->
+    <section class="content">
+        <h2>Admissions</h2>
+        <p>Join one of the most reputed engineering colleges accredited by NAAC & NBA.</p>
+
+        <h3>Eligibility Criteria</h3>
+        <ul>
+            <li>Passed 10+2 with Physics, Chemistry, and Mathematics as compulsory subjects.</li>
+            <li>Qualified in EAPCET / ECET / PGECET / ICET or equivalent entrance examinations.</li>
+            <li>Management quota admissions are also available.</li>
+        </ul>
+
+        <h3>Courses Offered</h3>
+        <ul>
+            <li>B.Tech in CSE, ECE, EEE, Mechanical, Civil, IT, and AI & DS.</li>
+            <li>M.Tech in specialized engineering fields.</li>
+            <li>MBA and MCA programs.</li>
+        </ul>
+
+        <div class="apply-box">
+            <h3>How to Apply?</h3>
+            <p>Students can apply online through the official admission portal or visit the college campus.</p>
+            <p><strong>Contact:</strong> admissions@lords.ac.in | +91-6309012442</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lords Institute of Engineering & Technology | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
