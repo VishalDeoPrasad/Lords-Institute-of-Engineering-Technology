@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lords Institute of Engineering & Technology</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background: #004aad; color: white; padding: 10px 20px; }
+        header h1 { margin: 0; font-size: 22px; }
+        nav { background: #00a2e8; padding: 10px 20px; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .content { padding: 40px; }
+        .content h2 { color: #004aad; }
+        .content p { line-height: 1.8; margin-bottom: 20px; }
+        footer { background: #004aad; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Lords Institute of Engineering & Technology</h1>
+        <p>UGC Autonomous | NAAC Accredited | NBA Accredited</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'admission' %}">Admissions</a>
+        <a href="{% url 'campuslife' %}">Campus Life</a>
+        <a href="#">Departments</a>
+        <a href="#">Placements</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- About Content -->
+    <section class="content">
+        <h2>About Lords Institute</h2>
+        <p>
+            Established in 2003, Lords Institute of Engineering and Technology is a premier institution
+            committed to excellence in engineering education, research, and innovation. 
+        </p>
+        <p>
+            With NAAC "A" Grade accreditation and NBA recognition, Lords has consistently been among the
+            top engineering colleges, providing students with state-of-the-art facilities, 
+            dedicated faculty, and industry exposure.
+        </p>
+        <p>
+            Our mission is to create technically skilled, innovative, and socially responsible engineers
+            who will contribute to the progress of society and industry.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lords Institute of Engineering & Technology | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

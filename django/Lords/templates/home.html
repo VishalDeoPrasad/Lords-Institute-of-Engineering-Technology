@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lords Institute of Engineering & Technology</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background: #004aad; color: white; padding: 10px 20px; }
+        header h1 { margin: 0; font-size: 22px; }
+        nav { background: #00a2e8; padding: 10px 20px; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { display: flex; justify-content: space-between; align-items: center; background: #f4f4f4; padding: 40px; }
+        .hero img { width: 55%; border-radius: 8px; }
+        .hero-text { width: 40%; font-size: 24px; font-weight: bold; color: #004aad; }
+        footer { background: #004aad; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Lords Institute of Engineering & Technology</h1>
+        <p>UGC Autonomous | NAAC Accredited | NBA Accredited</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'admission' %}">Admissions</a>
+        <a href="{% url 'campuslife' %}">Campus Life</a>
+        <a href="#">Departments</a>
+        <a href="#">Placements</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>World Class Infrastructure</h2>
+            <p>for a generation of <span style="color:#00a2e8;">innovators</span></p>
+        </div>
+        <img src="https://www.lords.ac.in/wp-content/uploads/2025/07/Ranking.jpg" alt="College Lab Image">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lords Institute of Engineering & Technology | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
